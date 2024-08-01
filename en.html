@@ -72,6 +72,22 @@
             animation: count 1s ease-out;
         }
 
+        .swipe-mobile {
+            animation: swipe-mobile 1.2s infinite;
+        }
+
+        @keyframes swipe-mobile {
+            from {
+                bottom: 23%;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 20%;
+                opacity: 0;
+            }
+        }
+
         .swipe {
             animation: swipe 1.2s infinite;
         }
@@ -522,7 +538,7 @@
             <span class="text-xs lg:text-sm">Designed by "samu, in Italy</span>
         </footer>
 
-        <div class="z-50 swipe fixed w-full h-fit -top-[200px] lg:bottom-0 flex flex-col">
+        <div class="z-50 swipe fixed w-full h-fit bottom-[20%] lg:bottom-0 flex flex-col">
             <i class="swipe fa-solid fa-arrow-down text-4xl text-zinc-800"></i>
             <p class="text-zinc-800 font-semibold">Scroll</p>
         </div>
