@@ -62,5 +62,10 @@ function apriMenuLang() {
 }
 
 function impostaLang(lang) {
+
+    if (lang == 'es') {
+        window.location.href = './index.html';
+    }
+
     window.location.href = `./${lang}.html`
 }
