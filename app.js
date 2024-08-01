@@ -65,7 +65,7 @@ function impostaLang(lang) {
 
     if (lang == 'es') {
         window.location.href = './index.html';
+    } else {
+        window.location.href = `./${lang}.html`
     }
-
-    window.location.href = `./${lang}.html`
 }
